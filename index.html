@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <title>Neffex</title>
+</head>
+<body>
+    <div class="player">
+        <img src="assets/covers/cover1.jpg" alt="cover" class="cover">
+        <h1 class="track-title">Immortal</h1>
+        <span class="artist-name">NEFFEX</span>
+        <div class="timeline-slider">
+            <div class="timeline">
+                <small class="time">0:00</small>
+                <small class="fulltime">2:55</small>
+            </div>
+            <div class="range-slider">
+                <input 
+                    type="range" 
+                    min="0"
+                    max="100"
+                    value="0"
+                    class="slider"
+                >
+                <div class="slider-thumb"></div>
+                <div class="progress"></div>
+            </div>
+        </div>
+        <div class="volume-slider">
+            <div class="volume-icon">
+                <span class="material-symbols-outlined">
+                    volume_down
+                </span>
+            </div>
+            <div class="range-slider">
+                <input 
+                    type="range" 
+                    min="0"
+                    max="100"
+                    value="50"
+                    class="slider"
+                >
+                <div class="progress"></div>
+            </div>
+        </div>
+        <div class="controls">
+            <button class="btn" id="btnPrev">
+                <span class="material-symbols-outlined">
+                    fast_rewind
+                </span>
+            </button>
+            <button class="btn btn-main" id="mainPlayBtn">
+                <span class="material-symbols-outlined">
+                    play_arrow
+                </span>
+            </button>
+            <button class="btn" id="btnNext">
+                <span class="material-symbols-outlined">
+                    fast_forward
+                </span>
+            </button>
+        </div>
+    </div>
+
+    <audio id="audio" hidden>
+        <source src="assets/tracks/Immortal.mp3">
+    </audio>
+
+    <script src="main.js"></script>
+</body>
+</html>
